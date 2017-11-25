@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Bebas-Neue-Bold';
+  src: url(../fonts/BebasNeueBold.woff2) format('woff2'),
+  url(../fonts/BebasNeueBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Century-Gothic-Bold';
+  src: url(../fonts/CenturyGothic-Bold.woff2) format('woff2'),
+  url(../fonts/CenturyGothic-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'SFUIText-Light';
+  src: url(../fonts/SFUIText-Light.woff2) format('woff2'),
+  url(../fonts/SFUIText-Light.woff) format('woff');
+}
+body{
+  color: #000;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+//Mixins
+@mixin titleSection{
+  color: $title-color;
+  font-family: $font-1;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.13;
+  text-transform: uppercase;
+  position: relative;
+  @include titleLine;
+  &:after{
+    top: -20px;
+    left: 50%;
+    margin-left: -33.5px;
+  }
+}
+@mixin textSection{
+  color: $main-color;
+  font-family: $font-1;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@mixin titleLine {
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 67px;
+    height: 7px;
+    background: $color-title-line;
+    position: absolute;
+  }
+}

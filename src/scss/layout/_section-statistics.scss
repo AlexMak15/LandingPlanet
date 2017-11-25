@@ -1,0 +1,63 @@
+.section-statistics_title{
+  @include titleSection;
+}
+.section-statistics_text{
+  @include textSection;
+  margin-bottom: 135px;
+}
+.statistics-block-circle{
+  width: 168px;
+  height: 168px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  &:after{
+    content: '';
+    display: inline-block;
+    border: 20px solid #00878d;
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    top: -60px;
+    left: -2px;
+  }
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 190px;
+    height: 175px;
+    position: absolute;
+    top: -60px;
+    left: -15px;
+    background-image: url(../img/img-statistics-circle.png);
+    background-position: -89px 0;
+    background-repeat: no-repeat;
+  }
+}
+.statistics-item-circle-text{
+  .number{
+    font-size: 40px;
+  }
+  span{
+    font-size: 19px;
+    font-family: $font-1;
+    line-height: 25px;
+    color: $main-color;
+    display: block;
+  }
+}
+.number.statistics-item-text-peoples{
+  font-size: 27px;
+}
+.statistics-item-title{
+  font-family: $font-3;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1.33;
+}
+.statistics-item-text-2{
+  font-size: 12px;
+  font-family: $font-3;
+  line-height: 1.33;
+}

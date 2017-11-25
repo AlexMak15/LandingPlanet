@@ -1,0 +1,32 @@
+.section-1{
+  padding-bottom: 150px;
+}
+.section-1_title{
+  color: $title-color;
+  font-family: $font-1;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.13;
+  text-transform: uppercase;
+  position: relative;
+  @include titleLine;
+  &:after{
+    top: -20px;
+    left: 50%;
+    margin-left: -33.5px;
+  }
+}
+.section-1_block-img{
+  padding-bottom: 30px;
+}
+.section-1_text-1{
+  @include textSection;
+  margin-bottom: 55px;
+}
+.section-1_text-2{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: $font-3;
+  font-size: 16px;
+}
