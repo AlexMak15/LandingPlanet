@@ -48,6 +48,49 @@
     height: 70px;
     border: 5px solid $main-color;
     border-radius: 50%;
+    transition: box-shadow 0.5s;
+    &:hover{
+      box-shadow: 0 0 10px 2px #009a9f;
+    }
+  }
+}
+.facebook-i,.youtube-i,.g-i{
+  position: relative;
+  &:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%,0);
+  }
+}
+.facebook-i{
+  &:after{
+    width: 23px;
+    height: 44px;
+    left: 50%;
+    top: 10px;
+    background-image: url(../img/icon/icon-facebook.png);
+    background-repeat: no-repeat;
+  }
+}
+.youtube-i{
+  &:after{
+    width: 35px;
+    height: 38px;
+    left: 50%;
+    top: 10px;
+    background-image: url(../img/icon/icon-youtube.png);
+    background-repeat: no-repeat;
+  }
+}
+.g-i{
+  &:after{
+    width: 35px;
+    height: 40px;
+    left: 50%;
+    top: 10px;
+    background-image: url(../img/icon/icon-g.png);
+    background-repeat: no-repeat;
   }
 }
 .footer-copyright{
