@@ -9,7 +9,21 @@
 }
 
 
-@media (min-width: 768px) {  }
+@media (max-width: 768px) {
+  .statistics-item{
+    padding-top: 100px;
+  }
+  .section-statistics_text{
+    margin-bottom: 0;
+  }
+  .statistics:after{
+    content: '';
+    display: none;
+  }
+  .statistics-block-circle:before{
+    display: none;
+  }
+  }
 
 
 @media (min-width: 992px) {  }

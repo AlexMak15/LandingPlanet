@@ -15,6 +15,7 @@
 }
 body{
   color: #000;
+  font-size: 50px;
 }
 img{
   max-width: 100%;
@@ -59,5 +60,24 @@ a{
     height: 7px;
     background: $color-title-line;
     position: absolute;
+  }
+}
+@mixin btnlernMore {
+  font-family: $font-1;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 49px;
+  line-height: 36px;
+  border: 2px solid #00888d;
+  color: $main-color;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  position: relative;
+   &:hover{
+    color: $main-color;
+    box-shadow: 0 0 10px;
+    border-radius: 10px;
+    transform: skewX(20deg);
   }
 }

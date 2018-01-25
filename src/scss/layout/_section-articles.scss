@@ -1,0 +1,41 @@
+.section-articles{
+  padding-top: 150px;
+  padding-bottom: 145px;
+}
+.section-articles-title{
+  @include titleSection;
+}
+.section-articles-text{
+  @include textSection;
+  padding-bottom: 60px;
+}
+.article-block-text{
+  margin-top: 80px;
+}
+.article-title{
+  font-family: $font-1;
+  font-size: 25px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: $title-color;
+}
+.article-text{
+  font-family: $font-3;
+  font-size: 15px;
+  line-height: 1.33;
+  color: inherit;
+  margin: 25px 0 25px 0;
+}
+.article-btn{
+  @include btnlernMore;
+}
+article{
+  margin-bottom: 10px;
+}
+.article-5{
+  padding-bottom: 45px;
+}
+.section-articles-btn{
+  @include btnlernMore;
+  padding: 0 26px;
+}

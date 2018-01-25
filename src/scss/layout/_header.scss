@@ -1,6 +1,6 @@
 header{
   padding-top: 42px;
-  padding-bottom: 50px;
+  margin-bottom: 90px;
 }
 .no-wrap{
   flex-wrap: nowrap;
@@ -11,7 +11,7 @@ header{
   .logo-main{
     margin-bottom: 0;
     font-family: $font-2;
-    font-size: 50px;
+    font-size: 10px;
     line-height: 36px;
   }
   &:hover{
@@ -73,7 +73,7 @@ header{
   line-height: 1.4;
   color: $main-color;
   background: rgba(255,255,255,.8);
-  position: fixed;
+  position: absolute;
   z-index: 50;
   top: 40px;
   right: 20%;
@@ -177,7 +177,7 @@ header{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #00888d;
+  background-color: #6cd0d4;
   display: inline-block;
   margin-right: 9px;
 }
@@ -185,5 +185,5 @@ header{
   margin-right: 0;
 }
 .owl-dot.active{
-  background-color: #6cd0d4;
+  background-color: #00888d;
 }

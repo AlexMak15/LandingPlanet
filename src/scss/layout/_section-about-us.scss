@@ -1,0 +1,16 @@
+.section-about-us{
+  background-image: url(../img/bg-hiromagie.jpg);
+  background-size: cover;
+}
+.section-about-us-title{
+  @include titleSection;
+  margin-top: 149px;
+}
+.section-about-us-text{
+  @include textSection;
+  margin-bottom: 60px;
+}
+.section-about-us-btn{
+  @include btnlernMore;
+  margin-bottom: 138px;
+}

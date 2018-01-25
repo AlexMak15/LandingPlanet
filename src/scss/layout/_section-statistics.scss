@@ -1,3 +1,6 @@
+.section-statistics{
+  padding-bottom: 150px;
+}
 .section-statistics_title{
   @include titleSection;
 }
@@ -5,12 +8,27 @@
   @include textSection;
   margin-bottom: 135px;
 }
+.statistics{
+  position: relative;
+  padding-bottom: 40px;
+  &:after{
+    content: '';
+    display: block;
+    height: 22px;
+    width: 100%;
+    background: #00878d;
+    position: absolute;
+    top: 99px;
+    z-index: 0;
+  }
+}
 .statistics-block-circle{
   width: 168px;
   height: 168px;
   position: relative;
   text-align: center;
   display: inline-block;
+  z-index: 15;
   &:after{
     content: '';
     display: inline-block;
@@ -21,6 +39,7 @@
     border-radius: 50%;
     top: -60px;
     left: -2px;
+    z-index: 10;
   }
   &:before{
     content: '';
@@ -60,4 +79,22 @@
   font-size: 12px;
   font-family: $font-3;
   line-height: 1.33;
+}
+.statistiks-block-text{
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    transform: translate(-50%,0);
+    border: 7.5px solid transparent;
+    border-top: 15px solid #6dbabe;
+  }
+}
+.statistics-btn-learnMore{
+  @include btnlernMore;
 }

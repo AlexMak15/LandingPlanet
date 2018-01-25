@@ -1,0 +1,30 @@
+.section-solar-planet-title{
+  @include titleSection;
+}
+.section-solar-planet-text{
+  @include textSection;
+  margin-bottom: 45px;
+}
+.section-solar-planet-btn{
+  display: inline-block;
+  font-family: $font-1;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  color: $main-color;
+  border:   4px solid transparent;
+  padding: 0 36px 0 40px;
+  transition: all 0.5s;
+  margin-right: 30px;
+  margin-bottom: 70px;
+  &:hover{
+    background: #fff;
+    border:   4px solid #00888d;
+    color: $main-color;
+  }
+}
+.section-solar-planet-block-img{
+  padding-bottom: 114px;
+}

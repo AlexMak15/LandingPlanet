@@ -1,0 +1,42 @@
+.section-advantages{
+  margin-bottom: 170px;
+}
+.section-advantages-title{
+  @include titleSection;
+}
+.section-advantages-text{
+  @include textSection;
+  margin-bottom: 50px;
+}
+.section-advantages-circle-1{
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+  border: 10px solid #00888d;
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -16px;
+    top: 40px;
+    background-image: url(../img/icon/advantages-icon-1.png);
+  }
+}
+.section-advantages-circle-cont-text{
+  font-family: $font-3;
+  line-height: 1.25;
+  color: #000000;
+}
+.section-advantages-circle-title{
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.section-advantages-circle-text{
+  font-size: 12px;
+}

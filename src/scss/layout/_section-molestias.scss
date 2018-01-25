@@ -1,0 +1,61 @@
+.section-molestias{
+  margin-bottom: 150px;
+}
+.section-molestias-title{
+  @include titleSection;
+  margin-bottom: 50px;
+}
+.section-molestias-item-circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid $main-color;
+  position: relative;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 56px;
+    height: 87px;
+    background-image: url(../img/icon/icon-section-molestias.png);
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+}
+.section-molestias-item-title{
+  font-family: $font-1;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $title-color;
+  position: relative;
+  padding-bottom: 10px;
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 198px;
+    height: 1px;
+    position: absolute;
+    background: $main-color;
+    bottom: 0;
+    left: 0;
+  }
+}
+.section-molestias-item-text{
+  font-family: $font-3;
+  font-size: 15px;
+  color: inherit;
+  line-height: 22px;
+}
+.section-molestias-item-link{
+  font-family: inherit;
+  font-size: 16px;
+  color: #1f49fe;
+  border-bottom: 1px solid #1f49fe;
+  &:hover{
+    color: #4d64c5;
+  }
+}
+.section-molestias-row-item-1{
+  margin-bottom: 50px;
+}
